@@ -1,5 +1,22 @@
 ## SSD：Single-Shot MultiBox Detector目标检测模型在Pytorch当中的实现
 ---
+## MY-运行指南
+数据集通常为yolo格式：
+yolo摆放格式：
+    -images：
+        -train
+        -val
+    -labels：
+        -train
+        -val
+1. 生成xml：如上的yolo格式，第一步转voc格式，运行add/txt2xml-2.py，会生成所需要的xml文件；第二步生成train.txt and val.txt，运行生成traintxt.py，将生成的ImageSets文件复制到
+    VOCdevkit/VOC2007中替换
+2. 生成2007_train.txt和2007_val.txt：运行voc_annotation.py，annotation_mode=2；修改model_data/voc_classes.txt里的类别
+3. 训练：
+
+
+
+
 
 ## 目录
 1. [仓库更新 Top News](#仓库更新)
